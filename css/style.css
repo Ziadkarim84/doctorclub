@@ -667,9 +667,12 @@ body {
 
 	.poker-table,
 	.phone-row,
-	.contact-box,
-	.id-do-club {
+	.contact-box {
 		width: 90%;
+	}
+
+	.id-do-club {
+		width: 85%;
 	}
 
 	.arrow-id {
