@@ -696,7 +696,7 @@ body {
 	}
 
 	.floating-whatsapp-image {
-
+		top: 70vh;
 		width: 60px;
 	}
 
