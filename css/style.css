@@ -731,6 +731,7 @@ body {
 
 	.download-btn {
 		margin-left: 2vw;
+		min-width: 12vw;
 	}
 
 	.click {
