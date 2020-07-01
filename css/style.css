@@ -1,0 +1,813 @@
+html {
+	scroll-behavior: smooth;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+@font-face {
+	src: url(../fonts/Ageone_bold.ttf);
+	font-family: Ageone_bold;
+
+}
+
+@font-face {
+	src: url(../fonts/akcelera.otf);
+	font-family: akcelera;
+
+}
+
+@font-face {
+	src: url(../fonts/akceleraalt-bold.otf);
+	font-family: akceleraalt-bold;
+
+}
+
+@font-face {
+	src: url(../fonts/akceleraalt-medium.otf);
+	font-family: akceleraalt-medium;
+
+}
+
+@font-face {
+	src: url(../fonts/AkcelerA-Medium.ttf);
+	font-family: AkcelerA-Medium;
+
+}
+
+@font-face {
+	src: url(../fonts/Gabriel-Sans-Bold.otf);
+	font-family: Gabriel-Sans-Bold;
+
+}
+
+@font-face {
+	src: url(../fonts/MyriadPro-Semibold.otf);
+	font-family: MyriadPro-Semibold;
+
+}
+
+/****************popup*********************/
+
+
+@keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		transform: translateY(-100px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+
+.popup {
+	width: 600px;
+	background-color: black;
+	padding: 10px;
+	z-index: 101;
+	position: absolute;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	right: 0;
+	left: 0;
+	visibility: hidden;
+	opacity: 0;
+
+	transition: visibility 0.5s,
+		opacity 0.5s linear;
+
+	transition: margin 0.5s;
+	border-style: groove;
+}
+
+
+
+.popup-cross {
+	width: 50px;
+	position: relative;
+	margin-left: 545px;
+
+
+
+
+}
+
+.popup-cross:hover,
+.popup buton:hover {
+	cursor: pointer;
+}
+
+.popup-pppoker {
+	width: 100px;
+	position: relative;
+	margin-top: -30px;
+	margin-left: 0;
+}
+
+.popup-top-spade {
+	width: 300px;
+	position: relative;
+
+	margin-left: 40px;
+	margin-top: -107px;
+}
+
+
+.popup-heading {
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+}
+
+.popup-logo {
+	width: 150px;
+	display: block;
+	margin: auto;
+	padding-top: 10px;
+}
+
+.popup input {
+	width: 100%;
+	padding: 10px;
+	margin-top: 10px;
+	border-style: inset;
+	background-color: lightgrey;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.popup button {
+	display: block;
+	margin: 20px auto;
+	font-size: 1.5rem;
+	border-style: none;
+	background-color: #F6B63E;
+	padding: 5px 70px;
+	font-weight: bold;
+	border-radius: 25px;
+}
+
+
+.popup-foot {
+	font-size: 1.3rem;
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.popup .col-12 {
+	padding: 5px 30px;
+}
+
+@media only screen and (max-width: 620px) {
+	.popup {
+		width: 500px;
+		padding: 5px;
+	}
+
+	.popup-cross {
+		width: 40px;
+		position: relative;
+		margin-left: 460px;
+	}
+
+	.popup-top-spade {
+		width: 200px;
+
+		margin-left: 40px;
+		margin-top: -90px;
+	}
+
+	.popup-heading {
+
+		font-size: 1.3rem;
+	}
+
+	.popup-logo {
+		width: 120px;
+
+	}
+
+	.popup-foot {
+		font-size: 1.1rem;
+
+	}
+
+	.popup input {
+		font-size: 1rem;
+	}
+}
+
+
+@media only screen and (max-width: 520px) {
+	.popup {
+		width: 400px;
+		padding: 5px;
+	}
+
+	.popup-cross {
+		width: 30px;
+		position: relative;
+		margin-left: 368px;
+	}
+
+	.popup-pppoker {
+		width: 80px;
+		position: relative;
+		margin-top: -25px;
+		margin-left: 0;
+	}
+
+	.popup-top-spade {
+		width: 150px;
+
+		margin-left: 30px;
+		margin-top: -85px;
+	}
+
+	.popup-heading {
+
+		font-size: 1.1rem;
+	}
+
+	.popup-foot {
+		font-size: 0.9rem;
+
+	}
+
+	.popup input {
+		font-size: .8rem;
+	}
+
+	.popup-logo {
+		width: 100px;
+
+	}
+}
+
+
+@media only screen and (max-width: 420px) {
+	.popup {
+		width: 300px;
+		padding: 5px;
+	}
+
+	.popup-cross {
+		width: 30px;
+
+		margin-left: 265px;
+	}
+
+	.popup-pppoker {
+		width: 80px;
+		margin-left: 0px;
+		margin-top: -20px;
+	}
+
+	.popup-top-spade {
+		width: 150px;
+		margin-left: 70px;
+		margin-top: -150px;
+	}
+
+	.popup-heading {
+		font-size: 1rem;
+		line-height: 1;
+	}
+
+	.popup-foot {
+		font-size: 0.7rem;
+
+	}
+
+	.popup input {
+		font-size: .6rem;
+	}
+
+	.popup-logo {
+		width: 60px;
+
+	}
+
+	.popup button {
+		font-size: 1rem;
+	}
+
+	.popup .col-12 {
+
+		margin-top: -10px;
+	}
+}
+
+/*************************************/
+
+body {
+	background-color: black;
+	overflow-x: hidden;
+
+}
+
+.float-section {
+	position: fixed;
+	z-index: 100;
+}
+
+
+
+
+/*****************Top Fire********************/
+
+.top-fire {
+	background-image: url(../images/topfire.png);
+	background-size: cover;
+	height: 2vw;
+}
+
+.foot-fire {
+	background-image: url(../images/footfire.png);
+	height: 5vw;
+	z-index: 1;
+}
+
+/*****************Navbar********************/
+
+.navbar-toggler-icon {
+	background-image: url("../images/menu.png") !important;
+	background-size: 100% 100%;
+
+}
+
+.nav-bar {
+	padding: 2vw 6vw;
+	font-size: 1vw;
+	font-family: akceleraalt-medium;
+}
+
+.logo {
+	width: 30vw;
+	position: absolute;
+	display: block;
+	left: 26.5vw;
+	top: -2vw;
+	z-index: 1;
+}
+
+.navbar-nav .nav-item .nav-link {
+	text-decoration: none;
+	color: white;
+	padding: 1vw 2vw;
+	position: relative;
+	z-index: 2 !important;
+}
+
+.gap {
+	width: 8vw;
+}
+
+.navbar-nav .nav-item .social-icon {
+	padding: 1vw 5px;
+
+}
+
+.spade {
+	display: block;
+	margin: auto;
+	width: 30%;
+	margin-top: -1.2vw;
+}
+
+/*****************Poker-Table********************/
+
+.poker-table {
+	width: 80vw;
+	display: block;
+	margin: auto;
+	margin-top: 50px;
+}
+
+.download-text {
+	color: white;
+	position: relative;
+	top: -25vw;
+	text-align: center;
+	font-size: 1.5vw;
+	height: 0;
+}
+
+.download-text b {
+	font-size: 3vw;
+}
+
+.download-btn {
+	width: 100%;
+	position: relative;
+	top: -7vw;
+	display: block;
+	margin: auto;
+	left: -2vw;
+}
+
+.gplay,
+.appstore {
+	top: -5vw;
+}
+
+.click {
+	position: relative;
+	top: -4.5vw;
+	width: 60%;
+	left: -4vw;
+}
+
+.arrow-id {
+	position: relative;
+	top: -14vw;
+	left: -2vw;
+}
+
+/*****************Section-2********************/
+.sec2 {
+	background-color: #5C5B5F;
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-bottom: 10vw;
+	color: white;
+	border-radius: 25px !important;
+	font-size: 1vw;
+	margin-top: -8vw;
+}
+
+.phone-row {
+	width: 80%;
+	margin: auto;
+}
+
+.phone {
+	width: 80%;
+}
+
+.sec2-top {
+	background-color: #F6B63E;
+	text-align: center;
+	font-size: 1.2rem;
+	font-weight: bold;
+	padding: .5vw 0vw;
+	color: black;
+	border-radius: 25px 25px 0 0;
+	font-family: AkcelerA-Medium;
+}
+
+
+.numbers {
+	padding: 1vw 0vw;
+}
+
+.line {
+	width: 100%;
+}
+
+.phone {
+	width: 60%;
+	display: block;
+	margin: auto;
+	position: relative;
+	top: -50%;
+}
+
+/*****************ACES********************/
+
+.aces {
+	width: 80%;
+	display: block;
+	margin: auto;
+	margin-top: -8vw;
+}
+
+
+.contact-box {
+	width: 60%;
+	margin: auto;
+	border-radius: 25px;
+	padding: 2vw 0vw;
+	border: 2px solid #F6B63E;
+	text-align: center;
+	margin-top: 3vw;
+}
+
+.contact-head {
+	width: 25vw;
+	position: relative;
+	margin-top: -7vw;
+
+}
+
+.agency-contact {
+	text-align: right;
+	color: white;
+	font-size: 1.2vw;
+	font-family: akcelera;
+}
+
+.agency-logo {
+	width: 60%;
+
+}
+
+.agency-text-logo {
+	margin-top: 2vw;
+}
+
+.twentyfour {
+	color: #F6B63E;
+	font-size: 1.5vw;
+	font-family: Ageone_bold;
+
+}
+
+.small-logo {
+	width: 100%;
+}
+
+.whatsapp {
+	color: white;
+	font-size: 1vw;
+	margin-top: 5vw;
+}
+
+.whatsapp-logo {
+	width: 15%;
+
+}
+
+.phone-no {
+	color: #F6B63E;
+	font-size: 1.5vw;
+	font-family: MyriadPro-Semibold;
+}
+
+
+/*********************ENTRE*****************/
+
+.entre {
+	text-align: center;
+	color: white;
+	margin-top: 20px;
+}
+
+.entre-text {
+	font-size: 1.5vw;
+	line-height: 1;
+}
+
+.entre-heading {
+	font-size: 3vw;
+	font-family: akceleraalt-medium;
+
+}
+
+.gold-text {
+	color: #F6B63E;
+}
+
+.id-do-club {
+
+	width: 60%;
+	text-align: right;
+	margin: auto;
+	margin-top: 20px;
+	border-bottom: 2px solid #F6B63E;
+}
+
+.club {
+	font-size: 3.5vw;
+	font-family: akcelera;
+}
+
+.logo-2 {
+	float: left;
+	width: 50%;
+}
+
+.bottom {
+	margin-top: 20px;
+}
+
+.social-2 {
+	width: 1.5vw;
+
+	margin-top: 1vw;
+}
+
+.info {
+	font-size: 1.5vw;
+	font-family: akcelera;
+}
+
+.info-no {
+	font-size: 2vw;
+}
+
+.foot-fire {
+	margin-top: -8vw;
+}
+
+.no-text {
+	font-family: MyriadPro-Semibold;
+}
+
+.left-pad {
+	margin-left: 10vw;
+}
+
+.floating-whatsapp-image {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 70px;
+	-webkit-backface-visibility: hidden;
+}
+
+.floating-whatsapp-image:hover {
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 991px) {
+	.spade {
+
+		width: 2vw;
+
+	}
+
+	.nav-bar {
+		font-size: 1.5vw;
+	}
+
+	#navbarNav {
+		position: relative;
+		text-align: center;
+		margin-top: 10vw;
+	}
+
+	.social {
+		width: 2vw;
+		margin-left: 1.3vw;
+	}
+
+	.poker-table,
+	.phone-row,
+	.contact-box,
+	.id-do-club {
+		width: 90%;
+	}
+
+	.arrow-id {
+
+		left: -.5vw;
+	}
+
+	.sec2 {
+
+		font-size: 1.3vw;
+	}
+
+	.agency-contact {
+		font-size: 1.6vw;
+	}
+
+
+	.left-pad {
+		margin-left: 7vw;
+	}
+
+	.id-do-club {
+		margin-left: -.7vw;
+	}
+
+	.floating-whatsapp-image {
+
+		width: 60px;
+	}
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+	.poker-table {
+		margin-top: 5px;
+	}
+
+	.spade {
+
+		width: 3vw;
+
+	}
+
+	.nav-bar {
+		font-size: 3vw;
+	}
+
+	.social {
+		width: 3vw;
+
+	}
+
+	#navbarNav {
+		margin-left: 2vw;
+		margin-top: 7vw;
+	}
+
+	.download-btn {
+		margin-left: 2vw;
+	}
+
+	.click {
+		width: 30%;
+	}
+
+	.sec2 {
+		width: 90%;
+		font-size: 1.5vw;
+	}
+
+	.sec2-top {
+		font-size: 2.5vw;
+
+	}
+
+	.number {
+		width: 5vw;
+
+	}
+
+	.numbers {
+		padding: .5vw 0vw;
+		margin-top: 2vw;
+
+	}
+
+	.no-text {
+		padding: 2px;
+		font-size: 2vw;
+
+	}
+
+	.agency-contact {
+		font-size: 2vw;
+	}
+
+	.agency-contact,
+	.agency-logo {
+		margin-left: -10vw;
+		margin-top: 3vw;
+	}
+
+	.agency-logo {
+		width: 8vw;
+	}
+
+	.info {
+		font-size: 2.2vw;
+	}
+
+	.info-no {
+		font-size: 2.5vw;
+	}
+
+	.social-2 {
+		width: 3vw;
+		margin-top: -1vw;
+	}
+
+	.id-do-club {
+		margin-left: 8.5vw;
+	}
+
+	.contact-head {
+		margin-top: -9vw !important;
+	}
+
+	.floating-whatsapp-image {
+
+		width: 50px;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.floating-whatsapp-image {
+
+		width: 40px;
+	}
+}
