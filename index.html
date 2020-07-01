@@ -2,356 +2,373 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="Ziad Karim">
-    <link rel="shortcut icon" href="images/logo.png" />
-    <title>Doctor Club</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Ziad Karim">
+	<link rel="shortcut icon" href="images/logo.png" />
+	<title>Doctor Club</title>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body>
 
-    <!--*********************Modal*********************-->
-    <div class="popup" id="popup">
-        <img src="images/CROSS.png" alt="X" class="img-fluid popup-cross" onclick="modal_close()">
-        <img src="images/pppoker.png" alt="" class="img-fluid popup-pppoker">
-        <img src="images/top%20spade.png" alt="" class=" popup-top-spade">
-        <div class="row">
+	<!--*********************Modal*********************-->
+	<div class="popup" id="popup">
+		<img src="images/CROSS.png" alt="X" class="img-fluid popup-cross" onclick="modal_close()">
+		<img src="images/pppoker.png" alt="" class="img-fluid popup-pppoker">
+		<img src="images/top%20spade.png" alt="" class=" popup-top-spade">
+		<div class="row">
 
-            <div class="col-12">
-                <p class="popup-heading">
-                    VENHA FAZER PARTIDO TIME <br>
-                    <span style="color: #F6B63E;">seja um agente doctor club</span>
-                </p>
-            </div>
-            <div class="col-12">
-                <img src="images/popup-logo.png" alt="X doctor club" class="img-fluid popup-logo">
-            </div>
-            <div class="col-12">:
-                <input type="text" name="Nome" placeholder="Nome:">
-            </div>
-            <div class="col-12">
-                <input type="text" name="E-mail" placeholder="E-mail:">
-            </div>
-            <div class="col-12">
-                <div class="row">
-                    <div class="col-md-5">
-                        <input type="text" name="Estado" placeholder="Estado:">
-                    </div>
-                    <div class="col-md-7">
-                        <input type="text" name="Cidade" placeholder="Cidade:"></div>
-                </div>
-            </div>
-            <div class="col-12">
-                <input type="text" name="Contato" placeholder="Contato:"></div>
-            <div class="col-12">
-                <button type="submit">Enviar</button></div>
-            <div class="col-12">
-                <p class="popup-foot">Nossa Euipe vei em contato</p>
-            </div>
-        </div>
-    </div>
+			<div class="col-12" id="popup-heading">
 
-    <!--*****************Top Fire********************-->
+			</div>
+			<div class="col-12">
+				<img src="images/popup-logo.png" alt="X doctor club" class="img-fluid popup-logo">
+			</div>
+			<div class="col-12">:
+				<input type="text" name="Nome" placeholder="Nome:">
+			</div>
+			<div class="col-12">
+				<input type="text" name="E-mail" placeholder="E-mail:">
+			</div>
+			<div class="col-12">
+				<div class="row">
+					<div class="col-md-5">
+						<input type="text" name="Estado" placeholder="Estado:">
+					</div>
+					<div class="col-md-7">
+						<input type="text" name="Cidade" placeholder="Cidade:"></div>
+				</div>
+			</div>
+			<div class="col-12">
+				<input type="text" name="Contato" placeholder="Contato:"></div>
+			<div class="col-12">
+				<button type="submit">Enviar</button></div>
+			<div class="col-12">
+				<p class="popup-foot" id="popup-foot"></p>
+			</div>
+		</div>
+	</div>
 
-    <div class="top-fire"></div>
+	<!--*****************Top Fire********************-->
+
+	<div class="top-fire"></div>
 
 
-    <!--*****************Navbar********************-->
+	<!--*****************Navbar********************-->
 
 
-    <section class="nav-bar clearfix">
-        <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="">
-                <img src="images/logo.png" alt="Doctor club" class="img-fluid logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav" id="primary-nav">
+	<section class="nav-bar clearfix">
+		<nav class="navbar navbar-expand-lg">
+			<a class="navbar-brand" href="">
+				<img src="images/logo.png" alt="Doctor club" class="img-fluid logo">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav" id="primary-nav">
 
-                    <div class="gap"></div>
+					<div class="gap"></div>
 
 
-                    <li class="nav-item page">
-                        <a class="nav-link" href="#sec1" id="" style="color: #F6B63E;">
-                            <img src="images/spade.png" alt="" class="img-fluid spade">
-                            O CLUB </a>
-                    </li>
-                    <li class="nav-item page">
-                        <a class="nav-link" href="#sec2" id="">ASSOCIE-SE AO CLUBE</a>
-                    </li>
-                    <li class="nav-item page">
-                        <a class="nav-link" href="#sec3" id="">FICHAS </a>
-                    </li>
+					<li class="nav-item page">
+						<a class="nav-link" href="#sec1" id="" style="color: #F6B63E;">
+							<img src="images/spade.png" alt="" class="img-fluid spade">
+							O CLUB </a>
+					</li>
+					<li class="nav-item page">
+						<a class="nav-link" id="" onclick="pop_up('2')">ASSOCIE-SE AO CLUBE</a>
+					</li>
+					<li class="nav-item page">
+						<a class="nav-link" href="#sec3" id="">FICHAS </a>
+					</li>
 
-                    <li class="gap"></li>
-                    <li class="nav-item page">
-                        <a class="nav-link" id="" onclick="popup()">SEJA UM AGENTE </a>
-                    </li>
-                    <li class="nav-item page">
-                        <a class="nav-link" href="#contato" id="">CONTATO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link social-icon" href="https://www.instagram.com"><img src="images/instagram.png" alt="insta" class="social img-fluid" style="padding-right: 0;"></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link social-icon" href="https://www.facebook.com/"><img src="images/facebook.png" alt="fb" class="social img-fluid"> </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </section>
+					<li class="gap"></li>
+					<li class="nav-item page">
+						<a class="nav-link" id="" onclick="pop_up('1')">SEJA UM AGENTE </a>
+					</li>
+					<li class="nav-item page">
+						<a class="nav-link" href="#contato" id="">CONTATO</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link social-icon" href="https://www.instagram.com"><img src="images/instagram.png" alt="insta" class="social img-fluid" style="padding-right: 0;"></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link social-icon" href="https://www.facebook.com/"><img src="images/facebook.png" alt="fb" class="social img-fluid"> </a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</section>
 
-    <section class="clearfix" id="sec1">
-        <div class="row clearfix">
-            <div class="col-12">
-                <img src="images/tablenphone.png" alt="Poker Table" class="img-fluid poker-table">
-            </div>
-        </div>
-        <div class="row clearfix">
-            <div class="col-4 offset-5">
-                <div class="download-text">
-                    <b style="font-family: akceleraalt-medium; font-weight: normal" id="sec2">Entre para o clube!</b><br>
-                    <span style="font-family: akcelera;">Faça parte do nosso clube no aplicativo
-                        PP Poker e participe!</span>
-                </div>
-            </div>
-        </div>
-        <div class="row align-items-center">
-            <div class="col-lg-5 col-4"></div>
-            <div class="col-lg-5 col-7">
-                <div class="download-btn">
-                    <div class="row">
-                        <div class="col-md-1"></div>
-                        <div class="col-3">
-                            <a href="#"><img src="images/pppoker.png" alt="pppoker" class="download-btn pppoker img-fluid"></a>
-                        </div>
-                        <div class="col-3"><a href="#"><img src="images/googleplay.png" alt="gplay" class="download-btn gplay img-fluid" style=""></a></div>
-                        <div class="col-3"><a href="#"><img src="images/appstore.png" alt="appstore" class="download-btn appstore img-fluid" style=""></a></div>
+	<section class="clearfix" id="sec1">
+		<div class="row clearfix">
+			<div class="col-12">
+				<img src="images/tablenphone.png" alt="Poker Table" class="img-fluid poker-table">
+			</div>
+		</div>
+		<div class="row clearfix">
+			<div class="col-4 offset-5">
+				<div class="download-text">
+					<b style="font-family: akceleraalt-medium; font-weight: normal" id="sec2">Entre para o clube!</b><br>
+					<span style="font-family: akcelera;">Faça parte do nosso clube no aplicativo
+						PP Poker e participe!</span>
+				</div>
+			</div>
+		</div>
+		<div class="row align-items-center">
+			<div class="col-lg-5 col-4"></div>
+			<div class="col-lg-5 col-7">
+				<div class="download-btn">
+					<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-3">
+							<a href="#"><img src="images/pppoker.png" alt="pppoker" class="download-btn pppoker img-fluid"></a>
+						</div>
+						<div class="col-3"><a href="#"><img src="images/googleplay.png" alt="gplay" class="download-btn gplay img-fluid" style=""></a></div>
+						<div class="col-3"><a href="#"><img src="images/appstore.png" alt="appstore" class="download-btn appstore img-fluid" style=""></a></div>
 
-                        <div class="col-3 col-md-2"><img src="images/click.png" alt="click" class="
+						<div class="col-3 col-md-2"><img src="images/click.png" alt="click" class="
                          click img-fluid"></div>
 
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-1"></div>
-            <div class="col-lg-5 col-4"></div>
-            <div class="col-4">
-                <div class="row">
-                    <div class="col-12">
-                        <img src="images/arrow%20id.png" alt="id" class="img-fluid arrow-id">
-                    </div>
-                </div>
-            </div>
-            <div class="col-3"></div>
-        </div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2 col-1"></div>
+			<div class="col-lg-5 col-4"></div>
+			<div class="col-4">
+				<div class="row">
+					<div class="col-12">
+						<img src="images/arrow%20id.png" alt="id" class="img-fluid arrow-id">
+					</div>
+				</div>
+			</div>
+			<div class="col-3"></div>
+		</div>
 
-    </section>
+	</section>
 
 
-    <section id="sec3">
-        <div class="row sec2">
-            <div class="col-12 sec2-top">Siga os passos abaixo para entrar em nosso clube:
-            </div>
-            <div class="col-12">
-                <div class="row numbers">
-                    <div class="offset-md-1 col-md-1 col-3">
-                        <img src="images/01.png" alt="01" class="img-fluid number one">
-                    </div>
-                    <div class="col-md-2 col-1 d-none d-md-block"><img src="images/LINE.png" alt="---" class="img-fluid line"></div>
-                    <div class="col-md-1 col-3">
-                        <img src="images/02.png" alt="01" class="img-fluid number two">
-                    </div>
-                    <div class="col-md-2 col-1 d-none d-md-block"><img src="images/LINE.png" alt="---" class="img-fluid line"></div>
-                    <div class="col-md-1 col-3">
-                        <img src="images/03.png" alt="01" class="img-fluid number three">
-                    </div>
-                    <div class="col-md-2 col-1 d-none d-md-block"><img src="images/LINE.png" alt="---" class="img-fluid line"></div>
-                    <div class="col-md-1 col-3">
-                        <img src="images/04.png" alt="01" class="img-fluid number four">
-                    </div>
-                    <div class="col-md-1 col-2"></div>
-                </div>
-            </div>
+	<section id="sec3">
+		<div class="row sec2">
+			<div class="col-12 sec2-top">Siga os passos abaixo para entrar em nosso clube:
+			</div>
+			<div class="col-12">
+				<div class="row numbers">
+					<div class="offset-md-1 col-md-1 col-3">
+						<img src="images/01.png" alt="01" class="img-fluid number one">
+					</div>
+					<div class="col-md-2 col-1 d-none d-md-block"><img src="images/LINE.png" alt="---" class="img-fluid line"></div>
+					<div class="col-md-1 col-3">
+						<img src="images/02.png" alt="01" class="img-fluid number two">
+					</div>
+					<div class="col-md-2 col-1 d-none d-md-block"><img src="images/LINE.png" alt="---" class="img-fluid line"></div>
+					<div class="col-md-1 col-3">
+						<img src="images/03.png" alt="01" class="img-fluid number three">
+					</div>
+					<div class="col-md-2 col-1 d-none d-md-block"><img src="images/LINE.png" alt="---" class="img-fluid line"></div>
+					<div class="col-md-1 col-3">
+						<img src="images/04.png" alt="01" class="img-fluid number four">
+					</div>
+					<div class="col-md-1 col-2"></div>
+				</div>
+			</div>
 
-            <div class="col-12">
-                <div class="row">
-                    <div class="col-3 no-text">Faça o download do
-                        aplicativo PP Poker na sua
-                        loja de aplicativos;
-                    </div>
+			<div class="col-12">
+				<div class="row">
+					<div class="col-3 no-text">Faça o download do
+						aplicativo PP Poker na sua
+						loja de aplicativos;
+					</div>
 
-                    <div class="col-3 no-text">Crie seu cadastro;</div>
-                    <div class="col-3 no-text">Na tela inicial procure CLUBE
-                        clique em associar-se.
-                        <br>
-                        <p class="gold-text"><span style="font-family: akcelera;">Id do Club:</span> <span style="font-family: akceleraalt-bold;">1644819</span></p>
-                    </div>
-                    <div class="col-3 no-text">
-                        Envie uma mensagem
-                        para nosso whatsapp
-                        <p class="gold-text" style="margin-bottom: 0">64. 9226-6099
-                        </p>
-                        para confirmar sua solicitação.
+					<div class="col-3 no-text">Crie seu cadastro;</div>
+					<div class="col-3 no-text">Na tela inicial procure CLUBE
+						clique em associar-se.
+						<br>
+						<p class="gold-text"><span style="font-family: akcelera;">Id do Club:</span> <span style="font-family: akceleraalt-bold;">1644819</span></p>
+					</div>
+					<div class="col-3 no-text">
+						Envie uma mensagem
+						para nosso whatsapp
+						<p class="gold-text" style="margin-bottom: 0">64. 9226-6099
+						</p>
+						para confirmar sua solicitação.
 
-                    </div>
-                </div>
-            </div>
+					</div>
+				</div>
+			</div>
 
-        </div>
-        <div class="row phone-row">
-            <div class="col-3">
-                <img src="images/phone-1.png" alt="" class="img-fluid phone phone1">
-            </div>
-            <div class="col-3">
-                <img src="images/phone-2.png" alt="" class="img-fluid phone phone2">
-            </div>
-            <div class="col-3">
-                <img src="images/phone-3.png" alt="" class="img-fluid phone phone3">
-            </div>
-            <div class="col-3">
-                <img src="images/phone-4.png" alt="" class="img-fluid phone phone4">
-            </div>
-        </div>
-    </section>
+		</div>
+		<div class="row phone-row">
+			<div class="col-3">
+				<img src="images/phone-1.png" alt="" class="img-fluid phone phone1">
+			</div>
+			<div class="col-3">
+				<img src="images/phone-2.png" alt="" class="img-fluid phone phone2">
+			</div>
+			<div class="col-3">
+				<img src="images/phone-3.png" alt="" class="img-fluid phone phone3">
+			</div>
+			<div class="col-3">
+				<img src="images/phone-4.png" alt="" class="img-fluid phone phone4">
+			</div>
+		</div>
+	</section>
 
-    <div class="section" id="contato">
-        <div class="row aces">
-            <div class="col-12">
-                <img src="images/aces.png" alt="" class="img-fluid aces">
-            </div>
-        </div>
-        <div class="row contact-box">
-            <div class="col-12 contact">
-                <div class="row">
-                    <div class="col-12"><img src="images/contact-heading.jpg" alt="" class="img-fluid contact-head"></div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="row agency-text-logo">
-                            <div class="col-9 agency-contact">
-                                AGÊNCIA: 1639
-                                <br>
-                                CONTA CORRENTE: 81594-1
-                            </div>
-                            <div class="col-3">
-                                <img src="images/agency-1.png" alt="" class=" img-fluid agency-logo agency-1">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="row agency-text-logo">
-                            <div class="col-9 agency-contact">
-                                AGÊNCIA: 1639
-                                <br>
-                                CONTA CORRENTE: 81594-1
-                            </div>
-                            <div class="col-3">
-                                <img src="images/agency-2.png" alt="" class=" img-fluid agency-logo agency-2 small-logo">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="row agency-text-logo">
-                            <div class="col-9 agency-contact">
-                                AGÊNCIA: 1639
-                                <br>
-                                CONTA CORRENTE: 81594-1
-                            </div>
-                            <div class="col-3">
-                                <img src="images/agency-3.png" alt="" class=" img-fluid agency-logo agency-3">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="row agency-text-logo">
-                            <div class="col-9 agency-contact">
-                                AGÊNCIA: 1639
-                                <br>
-                                CONTA CORRENTE: 81594-1
-                            </div>
-                            <div class="col-3 ">
-                                <img src="images/agency-4.png" alt="" class=" img-fluid agency-logo agency-4 small-logo">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="row whatsapp">
-                        <div class="col-8 twentyfour">ATENDIMENTO 24H -DEPÓSITOS E SAQUES </div>
-                        <div class="col-4 ">
-                            <span><img src="images/whatsapp.png" alt="whatsapp" class="img-fluid whatsapp-logo"></span> <span class="phone-no">64. 99226-6099</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="section" id="contato">
+		<div class="row aces">
+			<div class="col-12">
+				<img src="images/aces.png" alt="" class="img-fluid aces">
+			</div>
+		</div>
+		<div class="row contact-box">
+			<div class="col-12 contact">
+				<div class="row">
+					<div class="col-12"><img src="images/contact-heading.jpg" alt="" class="img-fluid contact-head"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="row agency-text-logo">
+							<div class="col-9 agency-contact">
+								AGÊNCIA: 1639
+								<br>
+								CONTA CORRENTE: 81594-1
+							</div>
+							<div class="col-3">
+								<img src="images/agency-1.png" alt="" class=" img-fluid agency-logo agency-1">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<div class="row agency-text-logo">
+							<div class="col-9 agency-contact">
+								AGÊNCIA: 1639
+								<br>
+								CONTA CORRENTE: 81594-1
+							</div>
+							<div class="col-3">
+								<img src="images/agency-2.png" alt="" class=" img-fluid agency-logo agency-2 small-logo">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="row agency-text-logo">
+							<div class="col-9 agency-contact">
+								AGÊNCIA: 1639
+								<br>
+								CONTA CORRENTE: 81594-1
+							</div>
+							<div class="col-3">
+								<img src="images/agency-3.png" alt="" class=" img-fluid agency-logo agency-3">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<div class="row agency-text-logo">
+							<div class="col-9 agency-contact">
+								AGÊNCIA: 1639
+								<br>
+								CONTA CORRENTE: 81594-1
+							</div>
+							<div class="col-3 ">
+								<img src="images/agency-4.png" alt="" class=" img-fluid agency-logo agency-4 small-logo">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="row whatsapp">
+						<div class="col-8 twentyfour">ATENDIMENTO 24H -DEPÓSITOS E SAQUES </div>
+						<div class="col-4 ">
+							<span><img src="images/whatsapp.png" alt="whatsapp" class="img-fluid whatsapp-logo"></span> <span class="phone-no">64. 99226-6099</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <section id="sec4">
-        <div class="row entre">
-            <div class="offset-4 col-4 entre-text">
-                <p class="entre-heading">Entre para o clube!</p>
-                <span style="font-family: akcelera;">Faça parte do nosso clube no aplicativo
-                    PP Poker e participe!</span>
-            </div>
-            <div class="col-12">
-                <div class="row id-do-club">
+	<section id="sec4">
+		<div class="row entre">
+			<div class="offset-4 col-4 entre-text">
+				<p class="entre-heading">Entre para o clube!</p>
+				<span style="font-family: akcelera;">Faça parte do nosso clube no aplicativo
+					PP Poker e participe!</span>
+			</div>
+			<div class="col-12">
+				<div class="row id-do-club">
 
-                    <div class=" col-md-9 col-8">
-                        <p class="golden-text club">Id do Club: <span style="font-family: akceleraalt-bold;">1644819</span></p>
-                    </div>
-                    <div class="col-md-3 col-4"><img src="images/logo-2.png" alt="" class="img-fluid logo-2"></div>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="row bottom">
-                    <div class="col-3"><a href="" class="left-pad"><img src="images/instagram.png" alt="instagram" class="img-fluid social-2"></a> <a href=""> <img src="images/facebook.png" alt="facebook" class="img-fluid social-2"></a></div>
-                    <div class="col-6 info">Maiores Informações : <span class="info-no">64. 99226-6099</span>
-                    </div>
-                    <div class="col-3"></div>
-                </div>
-            </div>
-        </div>
-    </section>
+					<div class=" col-md-9 col-8">
+						<p class="golden-text club">Id do Club: <span style="font-family: akceleraalt-bold;">1644819</span></p>
+					</div>
+					<div class="col-md-3 col-4"><img src="images/logo-2.png" alt="" class="img-fluid logo-2"></div>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="row bottom">
+					<div class="col-3"><a href="" class="left-pad"><img src="images/instagram.png" alt="instagram" class="img-fluid social-2"></a> <a href=""> <img src="images/facebook.png" alt="facebook" class="img-fluid social-2"></a></div>
+					<div class="col-6 info">Maiores Informações : <span class="info-no">64. 99226-6099</span>
+					</div>
+					<div class="col-3"></div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-    <div class="foot-fire">
-        <img src="images/footfire.png" alt="" class="img-fluid">
-    </div>
+	<div class="foot-fire">
+		<img src="images/footfire.png" alt="" class="img-fluid">
+	</div>
 
-    <img src="images/whatsapp.png" alt="" class="floating-whatsapp-image img-fluid " onclick="window.open('https://api.whatsapp.com/send?phone=64992266099', '_blank');">
+	<img src="images/whatsapp.png" alt="" class="floating-whatsapp-image img-fluid " onclick="window.open('https://api.whatsapp.com/send?phone=64992266099', '_blank');">
 
-    <script type="text/javascript">
-        var pop = document.getElementById("popup");
+	<script type="text/javascript">
+		var pop = document.getElementById("popup");
 
-        function popup() {
+		function pop_up(popup_no) {
+			if (popup_no == '1') {
+				var heading = document.getElementById("popup-heading");
 
-            pop.style.visibility = "visible";
-            pop.style.opacity = "1";
-            pop.style.margin = "50px";
-            pop.style.marginLeft = "auto";
-            pop.style.marginRight = "auto";
+				heading.innerHTML = '<p class="popup-heading">VENHA FAZER PARTIDO TIME<br><span style = "color: #F6B63E;" > seja um agente doctor club </span></p> ';
 
-        }
+				var foot = document.getElementById("popup-foot");
+				foot.innerHTML = 'Nossa Euipe vei em contato'
+				pop.style.backgroundColor = "black";
+				pop.style.borderStyle = "groove";
+			}
+			if (popup_no == '2') {
+				var heading = document.getElementById("popup-heading");
 
-        function modal_close() {
-            pop.style.visibility = "hidden";
-            pop.style.opacity = "0";
-            pop.style.marginTop = "0px";
-            pop.style.marginLeft = "auto";
-            pop.style.marginRight = "auto";
-        }
+				heading.innerHTML = '<p class="popup-heading">Faça parte do nosso clube<br><span style = "color: #F6B63E;" > no aplicativo pp poker </span></p> ';
 
-    </script>
-    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+				var foot = document.getElementById("popup-foot");
+				foot.innerHTML = 'para confirmar sua solicitação <br> nossa equipe vai te liberar. aguarde';
+
+				pop.style.backgroundColor = "#560807";
+				pop.style.borderStyle = "none";
+			}
+			pop.style.visibility = "visible";
+			pop.style.opacity = "1";
+			pop.style.margin = "50px";
+			pop.style.marginLeft = "auto";
+			pop.style.marginRight = "auto";
+
+		}
+
+		function modal_close() {
+			pop.style.visibility = "hidden";
+			pop.style.opacity = "0";
+			pop.style.marginTop = "0px";
+			pop.style.marginLeft = "auto";
+			pop.style.marginRight = "auto";
+		}
+
+	</script>
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 
 </html>

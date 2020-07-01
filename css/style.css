@@ -126,6 +126,7 @@ a:hover {
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 1.5rem;
+	font-family: akceleraalt-medium;
 }
 
 .popup-logo {
@@ -151,6 +152,7 @@ a:hover {
 	margin: 20px auto;
 	font-size: 1.5rem;
 	border-style: none;
+	text-transform: uppercase;
 	background-color: #F6B63E;
 	padding: 5px 70px;
 	font-weight: bold;
