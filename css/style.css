@@ -633,8 +633,8 @@ body {
 
 .floating-whatsapp-image {
 	position: fixed;
-	bottom: 20px;
-	right: 20px;
+	top: 88vh;
+	left: 88vw;
 	width: 70px;
 	-webkit-backface-visibility: hidden;
 }
