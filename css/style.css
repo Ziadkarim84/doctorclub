@@ -639,6 +639,8 @@ body {
 	-webkit-backface-visibility: hidden;
 }
 
+
+
 .floating-whatsapp-image:hover {
 	cursor: pointer;
 }
@@ -658,6 +660,10 @@ body {
 		position: relative;
 		text-align: center;
 		margin-top: 10vw;
+	}
+
+	.navbar-toggler {
+		margin-right: -2vw;
 	}
 
 	.social {
@@ -720,6 +726,10 @@ body {
 
 	.nav-bar {
 		font-size: 3vw;
+	}
+
+	.navbar-toggler {
+		margin-right: -3vw;
 	}
 
 	.social {
@@ -813,5 +823,9 @@ body {
 	.floating-whatsapp-image {
 
 		width: 40px;
+	}
+
+	.navbar-toggler {
+		margin-right: -4vw;
 	}
 }
